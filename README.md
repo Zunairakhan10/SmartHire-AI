@@ -84,16 +84,6 @@ SmartHire AI is an educational NLP prototype. Its similarity score is not a meas
 
 This project aligns with **UN Sustainable Development Goal 8: Decent Work and Economic Growth** by exploring accessible tools that help job seekers understand job requirements and improve resume relevance.
 
-## Project Information
 
-- **Developer:** YOUR NAME
-- **Institution:** YOUR UNIVERSITY
-- **Program:** IBM SkillsBuild AI & ML Internship
-- **GitHub Repository:** YOUR REPOSITORY URL
-- **Live Demo:** Add after successful deployment
-
-## Disclaimer
-
-This project is intended for educational and demonstration purposes only. Its results are informational and do not guarantee employment.
 
 
