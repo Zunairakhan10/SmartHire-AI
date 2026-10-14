@@ -1,27 +1,26 @@
 # SmartHire AI — Resume Matcher
 
-SmartHire AI is an NLP-powered application that compares resume text with a job description using TF-IDF and cosine similarity. It highlights overlapping keywords, potential keyword gaps, and basic resume-improvement suggestions.
+SmartHire AI is an NLP-powered application that compares resumes with job descriptions using TF-IDF and cosine similarity. It identifies matching keywords, highlights potential skill gaps, and provides basic resume improvement suggestions.
 
-**Program:** IBM SkillsBuild AI & ML Internship — Final Project Prototype  
-**Theme:** UN SDG 8 — Decent Work and Economic Growth
+**Internship:** IBM SkillsBuild AI & ML Internship  
+**Theme:** SDG 8 — Decent Work and Economic Growth
 
 ## Features
 
-- Resume and job-description text comparison
+- Resume and job description matching
 - Text similarity score
 - Matching keyword identification
-- Potential missing-keyword analysis
-- Basic resume improvement suggestions
-- Downloadable text summary
-- Streamlit web interface
+- Missing keyword analysis
+- Resume improvement suggestions
+- Interactive web interface using Streamlit
 
-## Technology Stack
+## Tech Stack
 
 - Python
 - Streamlit
 - Scikit-learn
-- TF-IDF vectorization
-- Cosine similarity
+- TF-IDF Vectorization
+- Cosine Similarity
 
 ## Project Structure
 
@@ -32,50 +31,59 @@ SmartHire-AI/
 └── README.md
 ```
 
-## Run Locally
+## Installation and Setup
 
-1. Install Python 3.10 or later.
-2. Clone your repository and open the project folder in VS Code.
-3. Install dependencies:
+**1. Clone the repository**
 
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
+```bash
+git clone YOUR_REPOSITORY_URL
+cd SmartHire-AI
+```
 
-4. Start the app:
+**2. Install dependencies**
 
-   ```bash
-   python -m streamlit run app.py
-   ```
+```bash
+python -m pip install -r requirements.txt
+```
 
-5. Open the local URL shown in the terminal.
+**3. Run the application**
 
-On some Windows systems, use `py` instead of `python`.
+```bash
+python -m streamlit run app.py
+```
+
+Open the local URL displayed in your terminal to use the application.
 
 ## How It Works
 
-1. The user pastes resume text and a target job description.
-2. TF-IDF converts both texts into weighted numerical vectors.
-3. Cosine similarity estimates their textual similarity.
-4. Basic token comparison identifies shared terms and terms present in the job description but not the resume.
-5. The application displays the results and suggestions.
+1. Enter your resume text.
+2. Paste the target job description.
+3. The application converts the text into numerical features using TF-IDF.
+4. Cosine similarity estimates the textual similarity between the resume and job description.
+5. Review matching keywords, potential keyword gaps, and improvement suggestions.
 
-## Limitations and Responsible Use
+## Methodology
 
-This is an educational NLP prototype, not a trained hiring prediction model. The similarity score is not model accuracy, candidate quality, or probability of being hired. Keyword comparison can miss synonyms and context. Do not use this tool as the sole basis for recruitment decisions, and do not add skills that are not true. Avoid entering sensitive personal information in a public demo.
+- **TF-IDF:** Assigns weights to words based on their importance within the text.
+- **Cosine Similarity:** Measures the similarity between numerical text vectors.
+- **Keyword Comparison:** Identifies overlapping and missing terms using basic token matching.
+
+## Future Enhancements
+
+- Resume PDF and DOCX upload support
+- Semantic matching using sentence embeddings
+- Advanced skill extraction with NLP
+- Downloadable resume analysis reports
+- Improved user interface and accessibility
+
+## Responsible Use
+
+SmartHire AI is an educational NLP prototype. Its similarity score is not a measure of hiring probability, candidate quality, or model accuracy. Keyword matching may overlook synonyms and context. The application should not be used as the sole basis for recruitment decisions. Users should provide truthful information and avoid entering sensitive personal data into public demos.
 
 ## SDG Alignment
 
-The project explores ways to help job seekers understand job requirements and present their qualifications more effectively, aligning with the broader goals of **SDG 8: Decent Work and Economic Growth**.
+This project aligns with **UN Sustainable Development Goal 8: Decent Work and Economic Growth** by exploring accessible tools that help job seekers understand job requirements and improve resume relevance.
 
-## Project Information
 
-- **Developer:** YOUR NAME
-- **Institution:** YOUR UNIVERSITY
-- **Program:** IBM SkillsBuild AI & ML Internship
-- **Repository:** YOUR REPOSITORY URL
-- **Live Demo:** Add only after successful deployment
 
-## Disclaimer
 
-SmartHire AI is intended for educational and demonstration purposes. Its output is informational and does not guarantee employment.
